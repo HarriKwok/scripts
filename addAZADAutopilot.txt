@@ -3,8 +3,9 @@
 #Dump / Reg Autopilot (OOBE)
 PowerShell.exe -ExecutionPolicy Bypass
 Install-Script -Name Get-WindowsAutopilotInfo -Force 
+Y
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
-Connect-MSGraph
+#Connect-MSGraph
 Get-WindowsAutopilotInfo -Online
 
 #Dump / Reg Autopilot (User Logged in)
